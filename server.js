@@ -28,7 +28,7 @@ io.on("connection", (socket) => {
     socket.join(user.room);
 
     // when user connects
-    socket.emit("message", formatMessage(chatBotName, "welcome to ChatLance")); // notify the user who is connecting
+    socket.emit("message", formatMessage(chatBotName, "welcome to ChatBox!")); // notify the user who is connecting
 
     // broadcast when a user connects
     socket.broadcast
