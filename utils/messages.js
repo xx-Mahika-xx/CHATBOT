@@ -1,11 +1,6 @@
-const moment = require('moment');
+const moment = require("moment");
 
-function formatMessage(username, text) {
-  return {
-    username,
-    text,
-    time: moment().format('h:mm a')
-  };
-}
-
-module.exports = formatMessage;
+module.exports = formatMessage = (username, text) => {
+  let time = moment().format("h:mm a");
+  return { username, text, time };
+};
